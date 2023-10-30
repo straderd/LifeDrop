@@ -35,14 +35,12 @@ class MainActivity : AppCompatActivity() {
         val ibPlayerTwoPlus = binding.ibPlayerTwoPlus
         val ibPlayerTwoMinus = binding.ibPlayerTwoMinus
 
-
         // Floating Action Buttons
         val fabPalette = binding.fabPalette
         val fabRestart = binding.fabRestart
 
         // Play reset animation for all main buttons, health texts, and fab
         playResetAnimations(tvPlayerOneHealth, ibPlayerOnePlus, ibPlayerOneMinus, tvPlayerTwoHealth, ibPlayerTwoPlus, ibPlayerTwoMinus)
-
 
         // Constraint Layouts
         val clPlayerOne = binding.clPlayerOne
@@ -163,9 +161,9 @@ class MainActivity : AppCompatActivity() {
         ibPlayerTwoPlus: ImageButton,
         ibPlayerTwoMinus: ImageButton,
         newColor: String) {
-        var primaryColor: Int
-        var textColor: Int
-        var buttonColor: Int
+        val primaryColor: Int
+        val textColor: Int
+        val buttonColor: Int
         when (newColor) {
             "White" -> {
                 primaryColor = R.color.whiteBackground
