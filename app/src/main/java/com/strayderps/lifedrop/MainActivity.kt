@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
         println("Experimental")
         println("Master")
-        println("Experimental Two")
+        println("Experimental Two, but via command line")
         println("Experimental again")
 
         // Health TextViews
