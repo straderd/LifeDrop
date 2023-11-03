@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        println("Experimental Two, but via command line")
+        println("Experimental Two, but via command line YOOO")
 
         // Health TextViews
         val tvPlayerOneHealth = binding.tvPlayerOneHealth
