@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        println("Experimental")
+        println("Experimental again")
 
         // Health TextViews
         val tvPlayerOneHealth = binding.tvPlayerOneHealth
