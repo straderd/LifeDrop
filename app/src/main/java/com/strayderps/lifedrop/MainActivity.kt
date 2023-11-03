@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         println("Master")
+        println("Experimental Two")
 
         // Health TextViews
         val tvPlayerOneHealth = binding.tvPlayerOneHealth
