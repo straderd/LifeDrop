@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Life Counter</string>
+    <string name="app_name">Life Drop</string>
+    <string name="starting_health">20</string>
+    <string name="change_color">Change color</string>
+    <string name="restart">Restart</string>
+    <string name="player_1_plus">Player 1 plus</string>
+    <string name="player_1_minus">Player 1 minus</string>
+    <string name="player_2_plus">Player 2 plus</string>
+    <string name="player_2_minus">Player 2 minus</string>
 </resources>
