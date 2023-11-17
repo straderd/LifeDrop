@@ -69,13 +69,20 @@ class MainActivity : AppCompatActivity() {
             .setNegativeButton("Cancel") { _, _ ->
             }.create()
 
-        val colorOptions = arrayOf("White", "Blue", "Black", "Red", "Green")
+        val colorOptions = arrayOf(
+            getString(R.string.life_drop_coral),
+            getString(R.string.life_drop_cyan),
+            getString(R.string.plains_white),
+            getString(R.string.island_blue),
+            getString(R.string.swamp_black),
+            getString(R.string.mountain_red),
+            getString(R.string.forest_green))
 
         // Palette Dialog 2
         val paletteDialog2 = AlertDialog.Builder(this)
             .setTitle("Choose player 2 color")
             .setIcon(R.drawable.palette)
-            .setSingleChoiceItems(colorOptions, 2) {dialogInterface, i ->
+            .setSingleChoiceItems(colorOptions, 1) {_, i ->
                 changePlayerColors(clPlayerOne, clPlayerTwo, tvPlayerTwoHealth, fabPalette, fabRestart, ibPlayerOnePlus, ibPlayerOneMinus, ibPlayerTwoPlus, ibPlayerTwoMinus, colorOptions[i])
             }
             .setPositiveButton("Done") { _, _ ->
@@ -86,7 +93,7 @@ class MainActivity : AppCompatActivity() {
         val paletteDialog1 = AlertDialog.Builder(this)
             .setTitle("Choose player 1 color")
             .setIcon(R.drawable.palette)
-            .setSingleChoiceItems(colorOptions, 0) {dialogInterface, i ->
+            .setSingleChoiceItems(colorOptions, 0) {_, i ->
                 changePlayerColors(clPlayerOne, clPlayerOne, tvPlayerOneHealth, fabPalette, fabRestart, ibPlayerOnePlus, ibPlayerOneMinus, ibPlayerTwoPlus, ibPlayerTwoMinus, colorOptions[i])
             }
             .setPositiveButton("Next") { _, _ ->
@@ -126,7 +133,7 @@ class MainActivity : AppCompatActivity() {
             resetDialog.show()
         }
 
-        window.statusBarColor = getColor(R.color.blackButton)
+        window.statusBarColor = getColor(R.color.lifeDropCyanButton)
     }
 
     private fun changeHealth(playerHealth: TextView, amount: Int) {
@@ -165,22 +172,32 @@ class MainActivity : AppCompatActivity() {
         val textColor: Int
         val buttonColor: Int
         when (newColor) {
-            "White" -> {
+            getString(R.string.life_drop_coral) -> {
+                primaryColor = R.color.lifeDropRedBackground
+                textColor = R.color.lifeDropRedText
+                buttonColor = R.color.lifeDropRedButton
+            }
+            getString(R.string.life_drop_cyan) -> {
+                primaryColor = R.color.lifeDropCyanBackground
+                textColor = R.color.lifeDropCyanText
+                buttonColor = R.color.lifeDropCyanButton
+            }
+            getString(R.string.plains_white) -> {
                 primaryColor = R.color.whiteBackground
                 textColor = R.color.whiteText
                 buttonColor = R.color.whiteButton
             }
-            "Blue" -> {
+            getString(R.string.island_blue) -> {
                 primaryColor = R.color.blueBackground
                 textColor = R.color.blueText
                 buttonColor = R.color.blueButton
             }
-            "Black" -> {
+            getString(R.string.swamp_black) -> {
                 primaryColor = R.color.blackBackground
                 textColor = R.color.blackText
                 buttonColor = R.color.blackButton
             }
-            "Red" -> {
+            getString(R.string.mountain_red) -> {
                 primaryColor = R.color.redBackground
                 textColor = R.color.redText
                 buttonColor = R.color.redButton

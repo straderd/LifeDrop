@@ -2,6 +2,14 @@
 <resources>
     <color name="transparent">#00000000</color>
 
+    <color name="lifeDropRedBackground">#FF4343</color>
+    <color name="lifeDropRedText">#FFC8C8</color>
+    <color name="lifeDropRedButton">#C80000</color>
+
+    <color name="lifeDropCyanBackground">#00A6A6</color>
+    <color name="lifeDropCyanText">#AFEFEF</color>
+    <color name="lifeDropCyanButton">#086060</color>
+
     <color name="whiteBackground">#EADCAA</color>
     <color name="whiteText">#FFFFFFFF</color>
     <color name="whiteButton">#C1AE74</color>

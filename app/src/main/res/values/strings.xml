@@ -7,4 +7,11 @@
     <string name="player_1_minus">Player 1 minus</string>
     <string name="player_2_plus">Player 2 plus</string>
     <string name="player_2_minus">Player 2 minus</string>
+    <string name="life_drop_coral">Life Drop Coral</string>
+    <string name="life_drop_cyan">Life Drop Cyan</string>
+    <string name="plains_white">Plains White</string>
+    <string name="island_blue">Island Blue</string>
+    <string name="swamp_black">Swamp Black</string>
+    <string name="mountain_red">Mountain Red</string>
+    <string name="forest_green">Forest Green</string>
 </resources>

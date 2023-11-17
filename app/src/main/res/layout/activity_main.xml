@@ -15,11 +15,11 @@
         android:clickable="true"
         android:contentDescription="@string/change_color"
         android:focusable="true"
-        app:backgroundTint="@color/whiteButton"
+        app:backgroundTint="@color/lifeDropRedButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/fabRestart"
         app:srcCompat="@drawable/palette"
-        app:tint="@color/whiteBackground" />
+        app:tint="@color/lifeDropRedBackground" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabRestart"
@@ -29,17 +29,17 @@
         android:clickable="true"
         android:contentDescription="@string/restart"
         android:focusable="true"
-        app:backgroundTint="@color/whiteButton"
+        app:backgroundTint="@color/lifeDropRedButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/replay"
-        app:tint="@color/whiteBackground" />
+        app:tint="@color/lifeDropRedBackground" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/clPlayerOne"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@color/whiteBackground"
+        android:background="@color/lifeDropRedBackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/guidelineHorizontal"
         tools:context=".MainActivity">
@@ -51,7 +51,7 @@
             android:fontFamily="@font/kanit_medium"
             android:gravity="center"
             android:text="@string/starting_health"
-            android:textColor="@color/whiteText"
+            android:textColor="@color/lifeDropRedText"
             android:textSize="60sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +71,7 @@
             app:layout_constraintStart_toEndOf="@+id/guidelineVerticalOne"
             app:layout_constraintTop_toTopOf="@+id/tvPlayerOneHealth"
             app:srcCompat="@drawable/add"
-            app:tint="@color/whiteText" />
+            app:tint="@color/lifeDropRedText" />
 
         <ImageButton
             android:id="@+id/ibPlayerOneMinus"
@@ -86,7 +86,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tvPlayerOneHealth"
             app:srcCompat="@drawable/subtract"
-            app:tint="@color/whiteText" />
+            app:tint="@color/lifeDropRedText" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guidelineVerticalOne"
@@ -108,7 +108,7 @@
         android:id="@+id/clPlayerTwo"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@color/blackBackground"
+        android:background="@color/lifeDropCyanBackground"
         app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal"
         app:layout_constraintTop_toTopOf="parent"
         tools:context=".MainActivity">
@@ -120,7 +120,7 @@
             android:fontFamily="@font/kanit_medium"
             android:rotation="180"
             android:text="@string/starting_health"
-            android:textColor="@color/blackText"
+            android:textColor="@color/lifeDropCyanText"
             android:textSize="60sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -140,7 +140,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tvPlayerTwoHealth"
             app:srcCompat="@drawable/add"
-            app:tint="@color/blackText" />
+            app:tint="@color/lifeDropCyanText" />
 
         <ImageButton
             android:id="@+id/ibPlayerTwoMinus"
@@ -155,7 +155,7 @@
             app:layout_constraintStart_toEndOf="@+id/guidelineVerticalTwo"
             app:layout_constraintTop_toTopOf="@+id/tvPlayerTwoHealth"
             app:srcCompat="@drawable/subtract"
-            app:tint="@color/blackText" />
+            app:tint="@color/lifeDropCyanText" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guidelineVerticalTwo"
