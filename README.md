@@ -1,6 +1,7 @@
 # LifeDrop
 
-Android App | Life counter for Magic: The Gathering
+Android App | Life counter for MTG
 
-![Life Drop Logo](https://github.com/straderd/LifeDrop/assets/16142073/e1d0e27d-823c-4d06-bebf-12c3ef365b6d)
+![Life Drop Banner](https://github.com/straderd/LifeDrop/assets/16142073/b3d4b192-e098-4492-96ea-208c28a81aca)
+
 
